@@ -1,0 +1,11 @@
+img{
+    width:50%;
+    height:50%;
+    float:left;
+    margin-left:12px;
+    }
+    
+    td:hover{
+        color:crimson;
+        background-color:yellow;
+    }

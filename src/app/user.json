@@ -1,0 +1,58 @@
+{
+  "user": [
+    {
+      "uname": "aniruddha",
+      "uemail": "kiran@gmail.com",
+      "umobile": 123456789,
+      "uadd": "Pune",
+      "upass": "kiran",
+      "ucpass": "kiran",
+      "id": 2
+    },
+    {
+      "uname": "Aniii ",
+      "uemail": "ani@gmail.com",
+      "umobile": 6534892145,
+      "uadd": "Aurangabad",
+      "upass": "ani123",
+      "ucpass": "ani123",
+      "id": 5
+    },
+    {
+      "uname": "abc ",
+      "uemail": "abc@gmail.com",
+      "umobile": 4567891230,
+      "uadd": "Kopargaon",
+      "upass": "abc123",
+      "ucpass": "abc123",
+      "id": 6
+    },
+    {
+      "uname": "Kajal ",
+      "uemail": "kaj@gmail.com",
+      "umobile": 456899131,
+      "uadd": "Chennai",
+      "upass": "kajal123",
+      "ucpass": "kajal123",
+      "id": 7
+    },
+    {
+      "uname": "Hitesh",
+      "uemail": "hits@gmail.com",
+      "umobile": 456899131,
+      "uadd": "Kothrud,Pune",
+      "upass": "hits123",
+      "ucpass": "hits123",
+      "id": 8
+    },
+    {
+      "uname": "Shweta",
+      "uemail": "Shweta@gmail.com",
+      "umobile": 456899131,
+      "uadd": "Kharadi,Pune",
+      "upass": "shweta",
+      "ucpass": "shweta",
+      "id": 9
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+h1{
+    color:blue;
+    background-color: lightgreen;
+}
+
+
+
+.form-box{
+    width:380px;
+    height:680px;
+    position: relative;
+    margin:6% auto;
+    background:white;
+    padding:5px;
+}
+
+.social-icons
+{
+    margin:30px auto;
+    text-align:center;
+}
+.social-icons img
+{
+    width:40px;
+    margin:0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor:pointer;
+    border-radius:50%;
+}
+.input-group
+{
+    top:180px;
+    position:absolute;
+    width:280px;
+    transition:.5s;
+}
+
+.input-field
+{
+    width:100%;
+    padding:10px 0;
+    margin:5px 0;
+    border-left:0;
+    border-top:0;
+    border-right:0;
+    border-bottom:1px solid #999;
+    outline:none;
+    background:transparent;
+}
+
+
+#login
+{
+    left:50px
+}
+
+.check-box
+{
+    
+    margin:1px 5px 10px 50;
+}
+span{
+    color:#777;
+    font-size:15px;
+    bottom:3px;
+    left:10%;
+    position: absolute;
+}
+
+.submit-btn
+{
+    width:45%;
+    padding:10px 40px;
+    bottom:-40%;
+    position: absolute;
+    cursor: pointer;
+    display:block;
+    margin:auto;
+    background:linear-gradient(to right,#ff105f,#ffad06);
+    border:0;
+    outline:none;
+    border-radius:30px;
+}
+
+.a{
+    bottom:-30%;
+    right:20%;
+    position: absolute;
+}

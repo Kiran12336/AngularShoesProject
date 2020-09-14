@@ -1,0 +1,86 @@
+<div class="form-box">
+
+    
+    <h1 align="center">Registration</h1>
+
+    <div class="social-icons">
+        <img src="../../assets/fb.png">
+        <img src="../../assets/gm.jpg">
+    </div>
+
+    
+    <form id="register"class="input-group"  [formGroup]="form" (ngSubmit)="register()">
+      <div>
+        <input type="text" class="input-field" placeholder="Full Name" 
+        formControlName="uname" required>
+        <div class="alert alert-primary"
+        *ngIf="form.get('uname').invalid && form.get('uname').touched">
+        <div style="color:red;"*ngIf="form.get('uname').errors.required">   
+            Name is required </div>
+
+        <div style="color:red;" *ngIf="form.get('uname').errors.pattern">   
+            Name should contain only characters</div>
+        </div>
+    </div>
+
+
+    <div>
+        <input type="email" class="input-field" placeholder=" Email Id" 
+        formControlName="uemail"required>
+
+
+        <div class="alert alert-primary"
+        *ngIf="form.get('uemail').invalid && form.get('uemail').touched">
+        <div style="color:red;" *ngIf="form.get('uemail').errors.required">   
+        Email is required </div>
+
+
+       </div>
+</div>
+
+
+
+
+
+
+
+
+
+        <input type="number" class="input-field" placeholder="Mobile Number"
+        formControlName="umobile" required>
+
+
+        <input type="text" class="input-field" placeholder="Enter Address"
+        formControlName="uadd">
+
+        <div>
+        <input type="password" class="input-field" placeholder=" Enter Password" 
+        formControlName="upass" required>
+        
+        <div class="alert alert-primary"
+        *ngIf="form.get('upass').invalid && form.get('upass').touched">
+        <div style="color:red;" *ngIf="form.get('upass').errors.required">   
+        Password is required </div>
+
+
+       </div>
+
+    </div>
+
+        <input type="password" class="input-field" placeholder="Confirm Password" 
+        formControlName="ucpass"required>
+
+        
+
+        <input type="checkbox" class="check-box"><span>I agree to the T&C</span>
+
+        <button type="submit" class="submit-btn">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;
+       <!-- <a class="a"href="/lg">Login</a>-->
+        
+    </form>
+
+</div>   
+
+
+
+  

@@ -1,0 +1,35 @@
+<div class="form-box">
+<div *ngIf="form" >
+    
+    <h1 align="center">Update UserData</h1>
+
+    <div class="social-icons">
+        <img src="../../assets/fb.png">
+        <img src="../../assets/gm.jpg">
+    </div>
+
+    
+    <form id="register"class="input-group"  [formGroup]="form" (ngSubmit)="update()">
+        <input type="text" class="input-field" placeholder="Full Name" 
+        formControlName="uname" required>
+        <input type="email" class="input-field" placeholder=" Email Id" 
+        formControlName="uemail"required>
+        <input type="number" class="input-field" placeholder="Mobile Number"
+        formControlName="umobile" required>
+        <input type="text" class="input-field" placeholder="Enter Address"
+        formControlName="uadd">
+        <input type="password" class="input-field" placeholder=" Enter Password" 
+        formControlName="upass" required>
+        <input type="password" class="input-field" placeholder="Confirm Password" 
+        formControlName="ucpass"required>
+        <input type="checkbox" class="check-box"><span>I agree to the T&C</span>
+
+        <button type="submit" class="submit-btn" >Save</button>&nbsp;&nbsp;&nbsp;&nbsp;
+       <!-- <a class="a"href="/lg">Login</a>-->
+        
+    </form>
+</div>
+</div>   
+
+
+  
