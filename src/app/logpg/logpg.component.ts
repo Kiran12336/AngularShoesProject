@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-logpg',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogpgComponent implements OnInit {
 
-  constructor() { }
+
+  user :any =[]
+  constructor(private dataservice:DataService) { }
+
+ /* getUserData()
+  {
+    this.dataservice.logindata().subscribe((res)=>{
+      this.user=res
+    })
+  }*/
+
 
   ngOnInit(): void {
   }

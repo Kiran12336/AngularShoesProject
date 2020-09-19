@@ -29,6 +29,8 @@ import { LogpgComponent } from './logpg/logpg.component';
 import { AdminlgComponent } from './adminlg/adminlg.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ViewimgdetailComponent } from './viewimgdetail/viewimgdetail.component';
+import { AddtocartComponent } from './addtocart/addtocart.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 //import { RegsiterdashComponent } from './regsiterdash/regsiterdash.component';
 
 @NgModule({
@@ -53,6 +55,8 @@ import { ViewimgdetailComponent } from './viewimgdetail/viewimgdetail.component'
    AdminlgComponent,
    DashboardComponent,
    ViewimgdetailComponent,
+   AddtocartComponent,
+   PagenotfoundComponent,
    //LoginpageComponent,
    //LoginformComponent,
    //RegsiterdashComponent,

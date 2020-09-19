@@ -1,0 +1,47 @@
+<div class="form-box">
+
+    <h1>Product Details</h1>
+<form class="input-group" [formGroup]="form" (ngSubmit)="uploadfile()" >
+    <div>
+        
+        <input  class="input-field" type="text" placeholder="enter the brand"  class="form-control" formControlName="prbrand" 
+        name="prbrand">
+
+    </div>
+
+    <div>
+        
+        <input  class="input-field" type="text" placeholder="enter the color"  class="form-control" formControlName="prcolor" 
+        name="prcolor">
+
+    </div>
+
+    <div>
+        
+        <input  class="input-field" type="text" placeholder="enter the price"  class="form-control" formControlName="prprice" 
+        name="prprice">
+
+    </div>
+    <div>
+        
+        <input  class="input-field" type="number" placeholder="enter the Quantity"  class="form-control" formControlName="prqty" 
+        name="prqty">
+
+    </div>
+
+    <div>
+        <input type="file"  class="input-field"name="image" id="image" class="form-control" (change)="onFileSelect($event)"/>
+
+    </div>
+
+    <div>
+        <br>
+    </div>
+    <div>
+        <button type="submit" name="submit" class="btn btn-primary">Upload</button>&nbsp; &nbsp; &nbsp;
+        <button type="reset" name="reset" class="btn btn-primary">Reset</button>
+    </div>
+</form>
+</div>
+
+  

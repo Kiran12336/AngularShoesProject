@@ -16,6 +16,7 @@ id:number
  
   update()
   {
+    console.log(this.form.value);
     this.dataservice.updateData(this.id,this.form.value).subscribe((res)=>{
       alert("User Data Updated SuccessFully..")
       this.router.navigateByUrl("/ds")
@@ -34,12 +35,12 @@ this.activatedroute.params.subscribe((param)=>
 
     this.user = data
     this.form = new FormGroup({
-      uname:new FormControl(this.user.uname),
-      uemail: new FormControl(this.user.uemail),
-      umobile: new FormControl(this.user.umobile),
-      uadd: new FormControl(this.user.uadd),
-      upass: new FormControl(this.user.upass),
-      ucpass: new FormControl(this.user.ucpass)
+      uname:new FormControl(data[0]['username']),
+      uemail: new FormControl(data[0]['useremail']),
+      umobile: new FormControl(data[0]['userno']),
+      uadd: new FormControl(data[0]['useradd']),
+      upass: new FormControl(data[0]['userpass']),
+      ucpass: new FormControl(data[0]['usercpass'])
     })
   
   })

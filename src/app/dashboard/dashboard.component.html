@@ -19,14 +19,15 @@
 </thead>
 <tbody>
     <tr *ngFor ="let u of user">
-        <td>{{u.uname}}</td>
-        <td>{{u.uemail}}</td>
-        <td>{{u.umobile}}</td>
-        <td>{{u.uadd}}</td>
-        <td>{{u.upass}}</td>
-        <td>{{u.ucpass}}</td>
-        <td><a class="btn btn-success" [routerLink]="['/update',u.id]">Edit Data</a></td>
-        <td><a class="btn btn-danger" (click)="delete(u.id)">Delete Data</a></td>
+        <td><input type="hidden" value={{u.id}}>
+        {{u.username}}</td>
+        <td>{{u.useremail}}</td>
+        <td>{{u.userno}}</td>
+        <td>{{u.useradd}}</td>
+        <td>{{u.userpass}}</td>
+        <td>{{u.usercpass}}</td>
+        <td><a class="btn btn-success" [routerLink]="['/update',u.id]">Edit </a></td>
+        <td><a class="btn btn-danger" (click)="delete(u.id)">Delete </a></td>
     </tr>
 </tbody>
 </table>

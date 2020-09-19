@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminlgComponent implements OnInit {
 
- uname:string
- pass:string
+ uname:string="admin"
+ pass:string="admin123"
 
 onclick()
 {

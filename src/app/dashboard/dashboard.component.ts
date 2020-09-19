@@ -11,19 +11,24 @@ export class DashboardComponent implements OnInit {
 
   user :any =[]
 
-  delete(id)
-  {
-    this.dataservice.deleteData(id).subscribe((res)=>{
-      alert("User Deleted Successfully...")
-      this.getUserData()
-    })
-  }
+  
 
   constructor(private dataservice:DataService) { }
   getUserData()
   {
     this.dataservice.getData().subscribe((res)=>{
       this.user=res
+    })
+  }
+
+  delete(id)
+  {
+    var myFormData= new FormData();
+    myFormData.append('id', id);
+    this.dataservice.deleteData(myFormData).subscribe((res)=>{
+      //console.log("success",res);
+      alert("User Deleted Successfully...")
+      this.getUserData()
     })
   }
 

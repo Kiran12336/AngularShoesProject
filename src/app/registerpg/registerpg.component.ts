@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import{User} from './user';
 import{FormGroup,FormControl, Validators} from '@angular/forms'
 import { DataService } from '../data.service';
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-registerpg',
   templateUrl: './registerpg.component.html',
@@ -14,16 +15,22 @@ export class RegisterpgComponent implements OnInit {
   
 
  
+  
+  constructor(private dataservice:DataService,private activatedroute:ActivatedRoute,private router:Router) { }
+
+
   register()
   {
-    //console.log(this.form.value)
+    console.log(this.form.value)
     //this.user.push(this.form.value)
 
     this.dataservice.saveData(this.form.value).subscribe((res)=>{
+     // console.log("data added" , res);
       alert("Registered SuccessFully..")
+    // this.router.navigateByUrl("/ds")
     })
   }
-  constructor(private dataservice:DataService) { }
+
 
   ngOnInit(): void {
 

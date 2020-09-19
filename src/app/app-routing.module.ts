@@ -19,6 +19,7 @@ import { LogpgComponent } from './logpg/logpg.component';
 import { AdminlgComponent } from './adminlg/adminlg.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ViewimgdetailComponent } from './viewimgdetail/viewimgdetail.component';
+import { AddtocartComponent } from './addtocart/addtocart.component';
 
 
 const routes: Routes = [
@@ -40,7 +41,18 @@ const routes: Routes = [
 {path:'lp',component:LogpgComponent},
 {path:'adlg',component:AdminlgComponent},
 {path:'ds',component:DashboardComponent},
-{path:'vw',component:ViewimgdetailComponent}
+{path:'vw',component:ViewimgdetailComponent},
+{path:'add',component:AddtocartComponent}
+
+/*{path:'adlg',component:AdminlgComponent,
+children:[
+  
+  //
+]
+
+}
+*/
+
 ];
 
 @NgModule({
@@ -52,4 +64,5 @@ export class AppRoutingModule { }
 export const routingComponents=[FormalfootComponent,
   MTraditionalComponent,McasualComponent,WFormalComponent,WcasualComponent,WTraditionalComponent,
 KFormalComponent,KCasualComponent,KTarditinalComponent,RegisterpgComponent,
-HomepageComponent,UpdateuserComponent,LogpgComponent,AdminlgComponent,DashboardComponent,ViewimgdetailComponent]
+HomepageComponent,UpdateuserComponent,LogpgComponent,AdminlgComponent,DashboardComponent,ViewimgdetailComponent,
+AddtocartComponent]

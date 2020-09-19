@@ -12,7 +12,7 @@
     <form id="register"class="input-group"  [formGroup]="form" (ngSubmit)="register()">
       <div>
         <input type="text" class="input-field" placeholder="Full Name" 
-        formControlName="uname" required>
+        formControlName="uname" name="uname" id="uname" required>
         <div class="alert alert-primary"
         *ngIf="form.get('uname').invalid && form.get('uname').touched">
         <div style="color:red;"*ngIf="form.get('uname').errors.required">   
@@ -26,7 +26,7 @@
 
     <div>
         <input type="email" class="input-field" placeholder=" Email Id" 
-        formControlName="uemail"required>
+        formControlName="uemail" name="uemail" id="uemail"required>
 
 
         <div class="alert alert-primary"
@@ -47,15 +47,15 @@
 
 
         <input type="number" class="input-field" placeholder="Mobile Number"
-        formControlName="umobile" required>
+        formControlName="umobile"  name="umobile" id="umobile" maxlength="10"required>
 
 
         <input type="text" class="input-field" placeholder="Enter Address"
-        formControlName="uadd">
+        formControlName="uadd" name="uadd" id="uadd">
 
         <div>
         <input type="password" class="input-field" placeholder=" Enter Password" 
-        formControlName="upass" required>
+        formControlName="upass" name="upass" id="upass"required >
         
         <div class="alert alert-primary"
         *ngIf="form.get('upass').invalid && form.get('upass').touched">
@@ -68,13 +68,14 @@
     </div>
 
         <input type="password" class="input-field" placeholder="Confirm Password" 
-        formControlName="ucpass"required>
+        formControlName="ucpass" name="ucpass" id="ucpass"required>
 
         
 
         <input type="checkbox" class="check-box"><span>I agree to the T&C</span>
 
         <button type="submit" class="submit-btn">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="a"routerLink="/lp">Login</a>
        <!-- <a class="a"href="/lg">Login</a>-->
         
     </form>

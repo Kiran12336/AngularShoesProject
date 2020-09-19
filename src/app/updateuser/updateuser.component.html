@@ -11,17 +11,17 @@
     
     <form id="register"class="input-group"  [formGroup]="form" (ngSubmit)="update()">
         <input type="text" class="input-field" placeholder="Full Name" 
-        formControlName="uname" required>
+        formControlName="uname" name="uname" required>
         <input type="email" class="input-field" placeholder=" Email Id" 
-        formControlName="uemail"required>
+        formControlName="uemail" name="uemail"required>
         <input type="number" class="input-field" placeholder="Mobile Number"
-        formControlName="umobile" required>
+        formControlName="umobile" name="umobile" required>
         <input type="text" class="input-field" placeholder="Enter Address"
-        formControlName="uadd">
+        formControlName="uadd" name="uadd">
         <input type="password" class="input-field" placeholder=" Enter Password" 
-        formControlName="upass" required>
+        formControlName="upass" name="upass" required>
         <input type="password" class="input-field" placeholder="Confirm Password" 
-        formControlName="ucpass"required>
+        formControlName="ucpass" name="upass"required>
         <input type="checkbox" class="check-box"><span>I agree to the T&C</span>
 
         <button type="submit" class="submit-btn" >Save</button>&nbsp;&nbsp;&nbsp;&nbsp;
